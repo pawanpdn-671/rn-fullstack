@@ -1,16 +1,21 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {SafeAreaView, ScrollView} from 'react-native';
+import ElevatedCard from './components/ElevatedCard';
+import FancyCard from './components/FancyCard';
+import FlatCard from './components/FlatCard';
+import ActionCard from './components/ActionCard';
 
-type Props = {};
-
-const App = (props: Props) => {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>App</Text>
-    </View>
+    <SafeAreaView>
+      <ScrollView>
+        <FlatCard />
+        <ElevatedCard />
+        <FancyCard />
+        <ActionCard />
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
