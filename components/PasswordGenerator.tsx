@@ -153,7 +153,7 @@ const PasswordGenerator = () => {
                   <TouchableOpacity
                     disabled={!isValid}
                     style={styles.primaryBtn}
-                    onPress={handleSubmit}>
+                    onPress={handleSubmit as any}>
                     <Text style={styles.primaryBtnTxt}>Generate Password</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
@@ -169,6 +169,15 @@ const PasswordGenerator = () => {
             )}
           </Formik>
         </View>
+        {isPassGenerated ? (
+          <View style={[styles.card, styles.cardElevated]}>
+            <Text style={styles.subTitle}>Output</Text>
+            <Text style={styles.description}>Long Press to copy</Text>
+            <Text selectable style={styles.generatedPassword}>
+              {password}
+            </Text>
+          </View>
+        ) : null}
       </SafeAreaView>
     </ScrollView>
   );
