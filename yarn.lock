@@ -4266,6 +4266,11 @@ react-native-bouncy-checkbox@^4.1.2:
   dependencies:
     "@freakycoder/react-native-bounceable" "^1.0.3"
 
+react-native-haptic-feedback@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/react-native-haptic-feedback/-/react-native-haptic-feedback-2.3.3.tgz"
+  integrity sha512-svS4D5PxfNv8o68m9ahWfwje5NqukM3qLS48+WTdhbDkNUkOhP9rDfDSRHzlhk4zq+ISjyw95EhLeh8NkKX5vQ==
+
 react-native@0.75.3:
   version "0.75.3"
   dependencies:
