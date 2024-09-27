@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {
+  Dimensions,
   FlatList,
   Pressable,
   StyleSheet,
@@ -11,6 +12,7 @@ import Snackbar from 'react-native-snackbar';
 import {currencyByRupee} from '../src/constants';
 import CurrencyButton from './CurrencyButton';
 
+const {height} = Dimensions.get('window');
 const CurrencyConverter = () => {
   const [inputValue, setInputValue] = useState('');
   const [resultValue, setResultValue] = useState('');
@@ -41,7 +43,7 @@ const CurrencyConverter = () => {
   };
 
   return (
-    <>
+    <View style={styles.mainContainer}>
       <View style={styles.container}>
         <View style={styles.topContainer}>
           <View style={styles.rupeesContainer}>
@@ -75,13 +77,15 @@ const CurrencyConverter = () => {
           />
         </View>
       </View>
-    </>
+    </View>
   );
 };
 
-export default CurrencyConverter;
-
 const styles = StyleSheet.create({
+  mainContainer: {
+    height: height,
+    width: '100%',
+  },
   container: {
     flex: 1,
     backgroundColor: '#515151',
@@ -139,3 +143,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffeaa7',
   },
 });
+
+export default CurrencyConverter;
