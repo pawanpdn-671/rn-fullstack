@@ -9,11 +9,13 @@ import FancyCard from '../components/FancyCard';
 import FlatCard from '../components/FlatCard';
 import PasswordGenerator from '../components/PasswordGenerator';
 import RollDice from '../components/RollDice';
+import TicTacToe from '../components/TicTacToe';
 
 const App = () => {
   return (
     <SafeAreaView>
       <ScrollView>
+        <TicTacToe />
         <CurrencyConverter />
         <RollDice />
         <BgChanger />

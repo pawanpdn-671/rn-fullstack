@@ -12,7 +12,7 @@ const Icons = ({name}: IconsProps) => {
     case 'cross':
       return <Icon name="times" size={38} color="#38cc77" />;
     default:
-      return <Icon name="pencil" size={38} color="0d0d0d" />;
+      return <Icon name="pencil" size={38} color="#dedede" />;
   }
 };
 
