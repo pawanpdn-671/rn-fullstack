@@ -10,12 +10,14 @@ import FlatCard from '../components/FlatCard';
 import PasswordGenerator from '../components/PasswordGenerator';
 import RollDice from '../components/RollDice';
 import TicTacToe from '../components/TicTacToe';
+import MusicPlayer from '../components/MusicPlayer';
 
 const App = () => {
   return (
     <SafeAreaView>
       <ScrollView>
-        <TicTacToe />
+        <MusicPlayer />
+        {/* <TicTacToe />
         <CurrencyConverter />
         <RollDice />
         <BgChanger />
@@ -24,7 +26,7 @@ const App = () => {
         <ElevatedCard />
         <FancyCard />
         <ContactList />
-        <ActionCard />
+        <ActionCard /> */}
       </ScrollView>
     </SafeAreaView>
   );
