@@ -40,7 +40,7 @@ const ControlCenter = () => {
         }}>
         <Icon
           style={styles.icon}
-          name={playBackState.state === State.Playing ? 'pause' : 'play'}
+          name={playBackState.state === State.Playing ? 'pause' : 'play-arrow'}
           size={40}
         />
       </Pressable>
@@ -54,7 +54,6 @@ const ControlCenter = () => {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 56,
-
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',

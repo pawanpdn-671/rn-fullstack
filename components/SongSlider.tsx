@@ -3,9 +3,7 @@ import React from 'react';
 import {useProgress} from 'react-native-track-player';
 import Slider from '@react-native-community/slider';
 
-type Props = {};
-
-const SongSlider = (props: Props) => {
+const SongSlider = () => {
   const {position, duration} = useProgress();
 
   return (

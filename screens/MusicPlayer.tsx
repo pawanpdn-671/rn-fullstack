@@ -10,9 +10,9 @@ import SongInfo from '../components/SongInfo';
 import SongSlider from '../components/SongSlider';
 import ControlCenter from '../components/ControlCenter';
 
-const {width} = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
-const MusicPlayer = () => {
+const MusicPlayerScreen = () => {
   const [track, setTrack] = useState<Track | null>(null);
 
   useTrackPlayerEvents([Event.PlaybackActiveTrackChanged], async event => {
@@ -65,11 +65,13 @@ const MusicPlayer = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    height: height,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#001d23',
   },
   listArtWrapper: {
+    paddingTop: 50,
     width: width,
     justifyContent: 'center',
     alignItems: 'center',
@@ -84,4 +86,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MusicPlayer;
+export default MusicPlayerScreen;
