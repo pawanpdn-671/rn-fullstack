@@ -5,14 +5,14 @@ import TrackPlayer, {
   Track,
   useTrackPlayerEvents,
 } from 'react-native-track-player';
-import {playListData} from '../src/constants';
-import SongInfo from '../components/SongInfo';
-import SongSlider from '../components/SongSlider';
-import ControlCenter from '../components/ControlCenter';
+import {playListData} from '../constants';
+import SongInfo from '../../components/SongInfo';
+import SongSlider from '../../components/SongSlider';
+import ControlCenter from '../../components/ControlCenter';
 
 const {width, height} = Dimensions.get('window');
 
-const MusicPlayerScreen = () => {
+const MusicPlayer = () => {
   const [track, setTrack] = useState<Track | null>(null);
 
   useTrackPlayerEvents([Event.PlaybackActiveTrackChanged], async event => {
@@ -86,4 +86,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MusicPlayerScreen;
+export default MusicPlayer;

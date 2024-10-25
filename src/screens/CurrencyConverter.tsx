@@ -9,8 +9,8 @@ import {
   View,
 } from 'react-native';
 import Snackbar from 'react-native-snackbar';
-import {currencyByRupee} from '../src/constants';
-import CurrencyButton from './CurrencyButton';
+import {currencyByRupee} from '../constants';
+import CurrencyButton from '../../components/CurrencyButton';
 
 const {height} = Dimensions.get('window');
 const CurrencyConverter = () => {

@@ -1,7 +1,7 @@
 import {View, Text, StyleSheet, FlatList, Pressable} from 'react-native';
 import React, {useState} from 'react';
 import Snackbar from 'react-native-snackbar';
-import Icons from './Icons';
+import Icons from '../../components/Icons';
 
 const TicTacToe = () => {
   const [isCross, setIsCross] = useState<boolean>(false);

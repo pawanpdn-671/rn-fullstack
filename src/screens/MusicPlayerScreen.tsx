@@ -6,10 +6,10 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import {addTrack, setupPlayer} from '../musicPlayerServices';
-import MusicPlayerScreen from '../screens/MusicPlayer';
+import {addTrack, setupPlayer} from '../../musicPlayerServices';
+import MusicPlayer from './MusicPlayer';
 
-const MusicPlayer = () => {
+const MusicPlayerScreen = () => {
   const [isPlayerReady, setIsPlayerReady] = useState(false);
 
   async function setup() {
@@ -37,12 +37,12 @@ const MusicPlayer = () => {
   return (
     <View style={styles.container}>
       <StatusBar />
-      <MusicPlayerScreen />
+      <MusicPlayer />
     </View>
   );
 };
 
-export default MusicPlayer;
+export default MusicPlayerScreen;
 
 const styles = StyleSheet.create({
   container: {
