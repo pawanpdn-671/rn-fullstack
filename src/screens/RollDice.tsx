@@ -7,12 +7,12 @@ import {
   View,
 } from 'react-native';
 import React, {PropsWithChildren, useState} from 'react';
-import DiceOne from '../assets/One.png';
-import DiceTwo from '../assets/Two.png';
-import DiceThree from '../assets/Three.png';
-import DiceFour from '../assets/Four.png';
-import DiceFive from '../assets/Five.png';
-import DiceSix from '../assets/Six.png';
+import DiceOne from '../../assets/One.png';
+import DiceTwo from '../../assets/Two.png';
+import DiceThree from '../../assets/Three.png';
+import DiceFour from '../../assets/Four.png';
+import DiceFive from '../../assets/Five.png';
+import DiceSix from '../../assets/Six.png';
 import RNHapticFeedback from 'react-native-haptic-feedback';
 
 type DiceProps = PropsWithChildren<{

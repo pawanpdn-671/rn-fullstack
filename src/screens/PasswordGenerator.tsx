@@ -188,6 +188,7 @@ export default PasswordGenerator;
 const styles = StyleSheet.create({
   appContainer: {
     flex: 1,
+    backgroundColor: '#343434',
   },
   formContainer: {
     margin: 8,
